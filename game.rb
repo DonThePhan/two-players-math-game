@@ -46,7 +46,7 @@ class Game
       first_num, second_num, correctAnswer = self.getNumbers.values()
     
       puts "#{currentPlayer.name}: what's #{first_num} + #{second_num}?"
-      answer = gets.to_i
+      answer = gets.chomp.to_i
 
       self.class.handleAnswer(answer, correctAnswer, currentPlayer)
       self.display_score
